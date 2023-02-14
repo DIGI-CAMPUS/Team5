@@ -1,0 +1,119 @@
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+p {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+.slide_item {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 157px;
+}
+/* 슬라이드 fade in out!!!!! */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* 슬라이드 fade in out!!!!! */
+
+.loginbox div {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login {
+  width: 350px;
+  height: 390px;
+  border: 1px solid #dcdcdc;
+}
+
+fieldset {
+  border: none;
+}
+.login input {
+  width: 268.4px;
+  height: 37.6px;
+  border: 1px solid #dcdcdc;
+  background-color: #fffafa;
+  outline: none;
+}
+
+#user-id,
+#user-password {
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+  color: #c0c0c0;
+  font-size: 13px;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+}
+#login-summit {
+  border: none;
+  border-radius: 10px 10px;
+  background-color: #00bfff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.appstore {
+  width: 134.28px;
+  height: 40px;
+}
+
+.join {
+  padding-top: 10px;
+  width: 350px;
+  height: 63px;
+  border: 1px solid #dcdcdc;
+}
+
+.download {
+  width: 350px;
+  height: 95px;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bottom span {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: gray;
+  cursor: pointer;
+  font-size: 11px;
+}
