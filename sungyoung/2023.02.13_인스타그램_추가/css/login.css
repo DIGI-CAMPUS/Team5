@@ -131,6 +131,12 @@
 .idpwForgot {
   display: inline-block;
   margin-top: 5px;
+  cursor: pointer;
+}
+
+.idpwForgot:hover {
+  color: rgb(255, 193, 68);
+  cursor: pointer;
 }
 
 a > span:hover {

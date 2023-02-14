@@ -7,6 +7,12 @@
   color: rgb(77, 76, 76);
 }
 
+.all {
+  width: 5000px;
+  height: 3000px;
+  background: linear-gradient(rgb(206, 243, 247), rgb(190, 213, 243));
+}
+
 .container {
   background-color: rgb(235, 235, 235);
   border-radius: 20px;
@@ -69,6 +75,12 @@
   font-size: 30px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+}
+
+.facebookButton:hover {
+  background-color: rgb(232, 167, 75);
+  color: white;
 }
 
 .or {
@@ -111,6 +123,13 @@
   margin-left: 30px;
   padding: 10px;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.check:hover {
+  background-color: rgb(232, 167, 75);
+  color: white;
+  border: 1px solid rgb(242, 207, 147);
 }
 
 .idpwBox::placeholder {
@@ -133,4 +152,79 @@
 #loginBox:hover {
   color: rgb(255, 193, 68);
   cursor: pointer;
+}
+
+.shareFriend {
+  position: fixed;
+  background-color: rgb(238, 255, 127);
+  margin: 0px 0px;
+  /* width: 1690px; */
+  display: flex;
+  justify-content: center;
+}
+
+.shareFriend1 {
+  /* background-color: aquamarine; */
+  width: 445px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shareFriend2 {
+  /* background-color: rgb(49, 59, 193); */
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.shareFriend3 {
+  /* background-color: rgb(84, 165, 18); */
+  width: 445px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sButton {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgb(70, 68, 68);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.sButton:hover {
+  background-color: rgb(87, 132, 255);
+  color: white;
+}
+
+.friend {
+  font-size: 30px;
+  display: inline-block; /* 블럭화 */
+  color: rgb(96, 95, 95);
+  margin-top: 0px;
+}
+
+.imgBox {
+  width: 700px;
+  height: 1980px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 500px;
+  margin-top: 70px;
+}
+
+.five_team_img {
+  width: 650px;
+  height: 450px;
+  border-radius: 20px;
+  margin-left: 24px;
+  margin-top: 24px;
 }
