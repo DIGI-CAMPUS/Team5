@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lobster&display=swap");
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  font-family: "Do Hyeon", sans-serif;
+  text-decoration-line: none;
+  color: rgb(77, 76, 76);
+}
+
+.all {
+  width: 5000px;
+  height: 3000px;
+  background: linear-gradient(rgb(206, 243, 247), rgb(190, 213, 243));
+}
+
+.container {
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  width: 700px;
+  height: 750px;
+  margin: 10px 500px;
+  border: solid 1px rgb(184, 183, 183);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logoPart1 {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.logoPart2 {
+  display: inline-block; /* 블럭화 */
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 45px;
+  font-family: "Lobster", "Do Hyeon", sans-serf;
+  color: rgb(96, 95, 95);
+}
+
+.loginPart {
+  background-color: white;
+  width: 650px;
+  height: 600px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.loginPart1 {
+  display: inline-block; /* 블럭화 */
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Lobster", "Do Hyeon", sans-serf;
+  color: rgb(93, 93, 93);
+}
+
+.facebookButton {
+  width: 630px;
+  height: 60px;
+  background-color: rgb(33, 136, 254);
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.facebookButton:hover {
+  background-color: rgb(232, 167, 75);
+  color: white;
+}
+
+.or {
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(100, 99, 99);
+  margin-left: 290px;
+  margin-top: 10px;
+}
+
+/* input 창 */
+.loginPart3 {
+  width: 630px;
+  height: 400px;
+  margin-top: 10px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.chang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 70px;
+}
+
+.idpwBox {
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+
+.check {
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.check:hover {
+  background-color: rgb(232, 167, 75);
+  color: white;
+  border: 1px solid rgb(242, 207, 147);
+}
+
+.idpwBox::placeholder {
+  font-size: 20px;
+  text-align: left;
+}
+
+#loginBox {
+  width: 330px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  border: 3px solid white;
+  margin-left: 150px;
+}
+
+#loginBox:hover {
+  color: rgb(255, 193, 68);
+  cursor: pointer;
+}
+
+.shareFriend {
+  position: fixed;
+  background-color: rgb(238, 255, 127);
+  margin: 0px 0px;
+  /* width: 1690px; */
+  display: flex;
+  justify-content: center;
+}
+
+.shareFriend1 {
+  /* background-color: aquamarine; */
+  width: 445px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shareFriend2 {
+  /* background-color: rgb(49, 59, 193); */
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.shareFriend3 {
+  /* background-color: rgb(84, 165, 18); */
+  width: 445px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sButton {
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgb(70, 68, 68);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.sButton:hover {
+  background-color: rgb(87, 132, 255);
+  color: white;
+}
+
+.friend {
+  font-size: 30px;
+  display: inline-block; /* 블럭화 */
+  color: rgb(96, 95, 95);
+  margin-top: 0px;
+}
+
+.imgBox {
+  width: 700px;
+  height: 1980px;
+  background-color: black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 500px;
+  margin-top: 70px;
+}
+
+.five_team_img {
+  width: 650px;
+  height: 450px;
+  border-radius: 20px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
