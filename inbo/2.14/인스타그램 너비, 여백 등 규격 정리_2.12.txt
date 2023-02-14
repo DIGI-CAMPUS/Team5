@@ -1,0 +1,46 @@
+.left {
+  width: 20%;
+}
+.center {
+  width: 50%;
+}
+.right {
+  width: 30%;
+}
+
+1. 좌측 네비게이션 바
+- 폰트 사이즈 : 20px
+- 로고이미지 사이즈 : 
+- 이미지 사이즈 : 15%
+
+2. 실선 색상(연회색)
+- border-color: rgba(164, 161, 161, 0.692);
+
+3. 스토리영역의 가장 큰박스(center)
+margin-left: 10%;
+
+3-2. 스토리영역
+border-radius: 10px;
+width: 70%;
+
+4. 스토리 밑 박스영역
+- 게시글 작성한 사람프로필
+  *박스 큰거(.middle = 너비를 100%)
+  *프로필이미지그림 = 너비 px
+  *닉네임박스 = 너비 80%
+  *젤 우측 공유이미지박스 = 50px 50px
+  *그 안에 이미지 그림= 너비 40px 40px
+
+6. 우측
+- 프로필 영역 : out
+display: flex;
+  justify-content: space-between; /* 가장 바깥에 있는 박스 정렬 */
+  width: 260px;
+  height: 90px;
+  align-items: center;
+border-radius: 70px;
+} /* 매우중요! 위로 쏠린 닉네임/이름 줄간격을 가운데로 배치 */
+
+- 추천 영역 : out2
+
+- 팔로우 추천 영역 : out3
