@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="css/foundId.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="found_Id">아이디 찾기</span>
+      <span class="join_email">가입 당시 이름과 전화번호를 입력하세요</span>
+      <div class="foundField">
+        <div>
+          <input
+            type="text"
+            id="idBox"
+            class="idpwBox"
+            size="30"
+            required
+            placeholder="이름"
+            autocomplete="new-password"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="pwBox"
+            class="idpwBox"
+            size="30"
+            required
+            placeholder="전화번호"
+            autocomplete="new-password"
+          />
+        </div>
+      </div>
+      <div>
+        <input type="button" class="foundButton" value="찾기" />
+      </div>
+    </div>
+  </body>
+</html>
