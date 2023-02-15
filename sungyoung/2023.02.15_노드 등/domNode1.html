@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>domNode1</title>
+  </head>
+  <body>
+    <h1>DOM을 공부합시다</h1>
+    <a href="#" onclick="contentShow(); this.onclick='';">더 보기</a>
+    <!--#을 꼭 넣어줘야 한다!! 안그러면 a링크로 타져서 나타났다가 꺼짐-->
+    <div class="content"></div>
+  </body>
+
+  <script>
+    function contentShow() {
+      // 1. 요소 노드 만들기
+      var newP = document.createElement("p");
+      // 2. 텍스트 노드 만들기
+      var newText = document.createTextNode(
+        "DOM은 document object model의 줄임말입니다."
+      );
+      // 3. p 요소 노드와 텍스트 노드를 연결한다.
+      var newP_Text = newP.appendChild(newText);
+      // 4. p 요소 노드와 텍스트 노드 연결 분을 div에 넣어준다.
+      document.querySelector(".content").appendChild(newP_Text);
+    }
+  </script>
+</html>
