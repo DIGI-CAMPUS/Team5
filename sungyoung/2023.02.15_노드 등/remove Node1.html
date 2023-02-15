@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>remove Node1</title>
+  </head>
+  <body>
+    <p>text1</p>
+    <a href="https://www.naver.com">NAVER</a>
+    <a href="https://www.daum.net">daum</a>
+
+    <script>
+      // P 노드 삭제
+      // const CE1 = document.querySelector("p");
+      // CE1.parentNode.removeChild(CE1); // document.querySelector("p").parentNode : body
+
+      // a노드 삭제
+      const CE2 = document.querySelectorAll("a");
+
+      for (let i = 0; i < CE2.length; i++) {
+        CE2[i].parentNode.removeChild(CE2[i]); // document.querySelector("a").parentNode : body
+        // document.querySelectorAll("a").parentNode : undefined
+      }
+    </script>
+  </body>
+</html>

@@ -129,6 +129,7 @@ label {
   background: rgba(109, 166, 235, 0.959);
   border: none;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 footer {
@@ -149,4 +150,5 @@ footer > button {
   color: white;
   font-weight: bold;
   font-size: 12px;
+  cursor: pointer;
 }

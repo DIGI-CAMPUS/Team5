@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컨텐츠 조작</title>
+  </head>
+  <body>
+    <p id="title">Hello, <span style="display: none">Javascript</span></p>
+
+    <script>
+      // textContent, innerText, innerHTML 메소드
+      document.getElementById("title").textContent; // Hello, Javascript
+      document.getElementById("title").innerText; // Hello
+      document.getElementById("title").innerHTML; // Hello, <span style="display: none">Javascript</span>
+
+      console.log(document.getElementById("title").textContent); //TEXT로 인식
+      console.log(document.getElementById("title").innerText); //TEXT로 인식
+      console.log(document.getElementById("title").innerHTML); //홑화살괄호를 태그로 인식해서 진하게 나온다.
+    </script>
+  </body>
+</html>

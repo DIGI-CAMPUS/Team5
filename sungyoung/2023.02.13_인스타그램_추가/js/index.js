@@ -64,8 +64,8 @@ function changePic() {
 
 var scrabCount = 0;
 
-let scrab = document.querySelector("#scrab"); //텅빈 하트의 요소를 가져오겠단 의미
-scrab.onclick = changePic2; // love를 클릭하면 함수를 실행하겠단 의미
+let scrab = document.querySelector("#scrab");
+scrab.onclick = changePic2;
 function changePic2() {
   if (scrabCount == 0) {
     scrab.src = "img/black_scrabButton.png"; /* 카운트가 0일 때 빨간색으로 */
