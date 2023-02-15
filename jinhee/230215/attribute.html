@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      .fs100 {
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.naver.com">naver</a>
+    <a class="daum" href="https://www.naver.com">naver</a>
+    <script>
+      const aE1 = document.querySelector(".daum");
+      const href = aE1.getAttribute("href");
+      aE1.setAttribute("href", "https://www.daum.net");
+      aE1.innerText = "daum";
+      aE1.setAttribute("target", "_blank");
+      //   aE1.setAttribute("class", "red-color");
+      aE1.classList.add("red-color");
+      aE1.classList.add("fs100");
+    </script>
+  </body>
+</html>
