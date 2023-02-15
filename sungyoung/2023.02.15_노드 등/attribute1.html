@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute</title>
+
+    <style></style>
+  </head>
+  <body>
+    <a href="https://www.naver.com">NAVER</a>
+
+    <script>
+      const aEl = document.querySelector("a"); //노드 선택
+      const href = aEl.getAttribute("href"); //href attribute(속성) get
+      aEl.setAttribute("href", "https://www.daum.net");
+      aEl.innerText = "daum";
+      aEl.setAttribute("target", "_blank");
+    </script>
+  </body>
+</html>

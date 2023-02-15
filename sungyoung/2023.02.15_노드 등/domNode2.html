@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>domNode2</title>
+  </head>
+  <body>
+    <h1>DOM을 공부합시다</h1> <!--함수 두개 호출 가능-->
+    <a href="#" onclick="contentShow(); imgAdd(); this.onclick='';">더 보기</a>
+    <!--#을 꼭 넣어줘야 한다!! 안그러면 a링크로 타져서 나타났다가 꺼짐-->
+    <div class="content"></div>
+  </body>
+
+  <script>
+
+    function contentShow() {
+      // 1. 요소 노드 만들기
+      var newP = document.createElement("p");
+      // 2. 텍스트 노드 만들기
+      var newText = document.createTextNode(
+        "DOM은 document object model의 줄임말입니다."
+      );
+      // 3. p 요소 노드와 텍스트 노드를 연결한다.
+      var newP_Text = newP.appendChild(newText);
+      // 4. p 요소 노드와 텍스트 노드 연결 분을 div에 넣어준다. 웹 문서 DOM에 추가
+      document.querySelector(".content").appendChild(newP_Text);
+
+
+    }
+
+    function imgAdd() {
+      // 1. 요소 노드 만들기
+      var newImg = document.createElement("img");
+      // 2-1. 속성 노드를 만들기
+      var srcNode = document.createAttribute("src"); // 경로
+      var altNode = document.createAttribute("alt"); // 대체
+      var classNode = document.createAttribute("class"); // 클래스 네임
+      // 2-2. 속성 노드에 value를 넣어준다.
+      srcNode.value = "images/coffee-blue.jpg";
+      altNode.value = "커피컵";
+      classNode.value = "cupImg";
+      // 3. 요소 노드(img)와 속성 노드(src 등등) 연결하기
+      newImg.setAttributeNode(srcNode);
+      newImg.setAttributeNode(altNode);
+      newImg.setAttributeNode(classNode);
+      // 4. 웹 문서 DOM에 추가 (div 에 요소 노드를 연결하면 된다.)
+      document.querySelector(".content").appendChild(newImg);
+    } 
+  </script>
+
+  </body>
+</html>
