@@ -217,12 +217,78 @@ section {
 .lovelove {
   cursor: pointer;
 }
-.letter4 img {
-  width: 25px;
-  height: 25px; /* 스마일 그림 */
-  margin-left: 10px;
-  cursor: pointer;
+/* 2.16 수정한 메인 댓글창 */
+.main_comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
 }
+.main_comment img {
+  /* 스마일그림 */
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+.main_comment_text {
+  /* 댓글달기 텍스트창 */
+  width: 85%;
+  margin-left: 5px;
+  border: none;
+  font-size: 14px;
+}
+.main_comment_submit {
+  /* 게시 버튼 */
+
+  text-align: right;
+  color: rgba(0, 115, 255, 0.836);
+  font-size: 14px;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+.main_comment_submit:hover {
+  cursor: pointer;
+  color: rgb(34, 34, 111);
+}
+.main-icon-like-text-write_commentbox {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.main-icon-like-text-write_commentbox > div {
+  margin: 0;
+}
+.main-icon-like-text-write_commentbox > .userName {
+  width: 100px;
+  margin: 0 0 0 10px;
+}
+.main-icon-like-text-write-subtext {
+  width: 80%;
+  margin-left: 5px;
+}
+/* js로 구현한 댓글창(+) */
+.main-icon-like-text-write_comment {
+  width: 100%;
+  margin-left: -5px;
+}
+.main-icon-like-text-write_commentbox > span {
+  width: 60px;
+  height: auto;
+  margin: 0 0 0 10px;
+}
+.main-icon-like-text-write_commentbox > p {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 5px;
+}
+.main-icon-like-text-write_commentbox > img {
+  width: 15px;
+  height: 15px;
+}
+/* 끝 */
 
 .letter4 {
   display: flex;
@@ -362,16 +428,16 @@ ul.imgs2 li {
   display: inline-block;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.55);
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
 }
 .bullets2 label {
   display: inline-block;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.55);
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
 }
 /* 2. 선택된 불릿 배경 흰색으로 구분 표시 */
