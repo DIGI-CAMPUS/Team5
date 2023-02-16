@@ -120,29 +120,32 @@
             </div>
 
             
-                <div class="letter1">
-                  <div class="good" onchange="countPlus()">좋아요 1057개</div>
-                <div class="letter2">
-                  <div class="nickname3">iiingbo</div>
-                  <div class="show">다시보고싶은 KB금융그룹 8기 기자단 ♥...</div>
-                  <div class="more">더보기</div>
-                </div>
-                  <div class="comment">댓글 17개 모두보기</div>
-                <div class="letter3">
-                  <div class="nickname3">nakookmin</div>
-                  <div class="show">올 여름도 리브콘 해야쥬!?</div>
-                  <img src="실습과제 이미지/하트.PNG" class="lovelove"/><a href="#"></a>
-                </div>
-                <div class="date">1일 전</div>
-                <hr style="margin:5px 5px 3px -5px ;"> <!-- 실선 좌측으로 옮김 -->
-               </div>
-             <!-- 여기까지가 게시물 업로드 1일전 -->
+            <div class="letter1">
+              <div class="good" onchange="countPlus()">좋아요 1057개</div>
+            <div class="letter2">
+              <div class="nickname3">iiingbo</div>
+              <div class="show">다시보고싶은 KB금융그룹 8기 기자단 ♥...</div>
+              <div class="more">더보기</div>
+            </div>
+              <div class="comment">댓글 17개 모두보기</div>
 
-            <div class="letter4">
-              <img src="실습과제 이미지/smile.PNG" alt="웃음" />
-              <div class="comment">댓글 달기...</div>
-              <div class="send">게시</div>
-              </div>
+            <div class="main-icon-like-text-write_commentbox">
+              <p class="userName">nakookmin</p>
+              <div class="main-icon-like-text-write-subtext">올 여름도 리브콘 해야쥬!?</div>
+              <img class="lovelove" src="실습과제 이미지/하트.PNG"/>
+            </div>
+
+            <div class="main-icon-like-text-write_comment"></div> <!-- 댓글창추가 -->
+            <div class="date">1일 전</div>
+            <hr style="margin:5px 5px 3px -5px ;"> <!-- 실선 좌측으로 옮김 -->
+           </div>
+         <!-- 여기까지가 게시물 업로드 1일전 -->
+
+        <div class="main_comment">
+          <img src="실습과제 이미지/smile.PNG" alt="웃음" />
+          <input class="main_comment_text" type="text" placeholder="댓글 달기...">
+          <button class="main_comment_submit" onkeyup="enterkey()">게시</button>
+          </div>
 
           </div> <!-- 가운데 끝 -->
           <section> <!-- 22내용 -->
@@ -500,6 +503,7 @@
 </div><!-- 오른쪽영역 전체 박스 마지막 --> 
 </section>
 <script src="이벤트적용.js"></script>
+<script src="댓글달기.js"></script>
 <script src="로그인.js"></script>
 <script>
   function sTo(){

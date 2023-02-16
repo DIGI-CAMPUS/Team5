@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(240, 236, 236);
+  padding: 30px 0px;
+  width: 360px;
+  background: white;
+}
+
+.applyInstaPic {
+  width: 175px;
+  height: 50px;
+}
+
+.fbBtn {
+  width: 283px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  background-color: #0095f6;
+  border-radius: 5px/10px;
+  border: 0;
+  color: white;
+}
+
+.or2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.applyTable input {
+  width: 268px;
+  height: 37px;
+  margin: 3px;
+}
+
+.bar {
+  margin: 0 17px;
+}
+
+.explain {
+  margin: 20px 0px;
+  font-size: 12px;
+}
+
+.exp {
+  font-weight: bold;
+  margin: 10px 0px 20px 0px;
+}
