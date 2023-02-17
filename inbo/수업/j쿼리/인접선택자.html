@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $("#22 > h1").css("border", "5px solid red");
+
+        $("#22 > section").children().css({
+          "background-color": "yellow",
+          border: "4px solid blue", //부모(섹션)의 자식들(h1,p)
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>인접 관계 선택자</h1>
+    <div id="22">
+      <h1>가나다라마바</h1>
+      <section>
+        <h1>가나다</h1>
+        <p>라마바</p>
+      </section>
+      <ul id="kb">
+        <li>리스트1</li>
+        <ul>
+          <!-- 22의 부모가 ul여기다. -->
+          <li id="22">리스트22</li>
+          <li>리스트22-1</li>
+        </ul>
+        <li>리스트2</li>
+        <li>리스트3</li>
+      </ul>
+    </div>
+    <h2 id="kb">선택자</h2>
+    <a>국민</a>
+    <h3>직접 선택자</h3>
+  </body>
+</html>
