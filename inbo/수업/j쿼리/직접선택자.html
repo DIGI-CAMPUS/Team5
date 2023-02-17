@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script src="jquery.js"></script>
+    <script>
+      //id는 #, class는 .으로 선택자를 지정한다.
+      //요소 선택자는 태그를 지정한다.
+      //동시 선택하고 싶을 땐 $("#kb, h1") 또는 $("h1#kb") h1 중에서 id값이 같은 것만 지정
+      $(function () {
+        $("#kb")
+          .css("background-color", "blue") //id 선택자
+          .css("color", "white") //id 선택자
+          .css("border", "5px solid red"); //체이닝 기법 : 선택한 요소에 메서드를 연속해서 사용
+      });
+      $(function () {
+        $("a")
+          .attr("href", "https://www.naver.com") //id 선택자
+          .attr("target", "_blank")
+          .css("font-size", "50px"); //체이닝 기법 : 선택한 요소에 메서드를 연속해서 사용
+      });
+      //선택한 요소에 스타일을 지정할 때 1번처럼.
+      //선택한 요소에 속성을 지정할 때 2번처럼.
+      //$("css선택자").attr("속성명", "값")
+    </script>
+  </head>
+  <body>
+    <h1>제이쿼리</h1>
+    <h2 id="kb">선택자</h2>
+    <a>국민</a>
+    <h3>직접 선택자</h3>
+  </body>
+</html>

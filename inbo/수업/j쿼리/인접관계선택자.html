@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        var style_1 = {
+          "background-color": "skyblue",
+          border: "4px solid red",
+        };
+        var style_2 = {
+          "background-color": "purple",
+          border: "4px dashed red",
+          color: "white",
+        };
+        /*   $(".txt").prev().css(style_1); //prev : 이전 것을 바꿔달라
+        $(".txt + p").css(style_2); //여기서 p는 텍스트 바로 다음것
+        $(".txt").next().next().css(style_2); */
+        /*   $(".txt").prevAll().css(style_1);
+        $(".txt").nextAll().css(style_2); */
+        $(".txt").prevUntil(".t").css(style_1); //txt 전에서부터~ t전 까지
+        $(".txt").nextUntil(".t2").css(style_1); //txt 다음부터~ t2전 까지
+      });
+    </script>
+  </head>
+  <body>
+    <h1>All이어도 여긴 해당안됨.</h1>
+    <div id="tt">
+      <h1 class="t">인접관계 선택자</h1>
+      <p>내용1</p>
+      <p>내용1</p>
+      <p class="txt">내용2</p>
+      <p>내용3</p>
+      <p>내용4</p>
+      <p class="t2">내용5</p>
+    </div>
+  </body>
+</html>
