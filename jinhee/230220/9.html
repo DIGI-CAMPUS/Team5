@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        //delegate는 선택한 요소의 하위 요소에 이벤트 등록한다.
+        //등록 이후에는 동적으로 생성된 요소와 복제된 요소에도 등록
+        //one은 이벤트가 1회만 발생(하단 참고)
+        $(".btn_wrap").delegate(".btn_1.on", "mouseover focus", function () {
+          alert("hello?");
+        });
+        $(".btn_1").addClass("on");
+        $(document).one("mouseover focus", ".btn_2.on", function () {
+          //one이라는 메소드는 한번만 쓴다..!!!라는 의미
+          alert("welcome!");
+        });
+        $(".btn_2").addClass("on");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <p class="btn_wrap">
+        <button class="btn_1">버튼1</button>
+      </p>
+      <p>
+        <button class="btn_2">버튼2</button>
+      </p>
+    </div>
+  </body>
+</html>
