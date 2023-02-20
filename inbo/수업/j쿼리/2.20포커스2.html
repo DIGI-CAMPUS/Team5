@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포커스2</title>
+
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $("#btn1").data({ text: "javascript" }).on({
+          mouseover: over, //올리면 over함수를 호출하고
+          mouseout: out, //벗어나면 out함수를 호출해달라
+        });
+
+        $("#btn2").data({ text: "hello!" }).on({
+          "mouseover focus": over, //버튼1에서 tab을 눌러도 헬로가 나오게~
+          "mouseout blur": out, //벗어나면 out함수를 호출해달라
+        });
+        function over() {
+          $(".txt").text($(this).data("text")); //오버되는 순간 데이터값을 넣어달라. 데이터는 위에~
+        }
+        function out() {
+          $(".txt").text(""); // 벗어났을 땐 텍스트 공백
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <p><button id="btn1">버튼1</button></p>
+    <p><button id="btn2">버튼2</button></p>
+    <p class="txt"></p>
+  </body>
+</html>
