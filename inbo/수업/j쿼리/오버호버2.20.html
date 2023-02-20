@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마우스오버/아웃,호버</title>
+
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $(".btn1").on({
+          //on 메소드는 그룹으로 사용할 때~(단독x)
+          mouseover: function () {
+            $(".txt1").css({ "background-color": "yellow" });
+          },
+          mouseout: function () {
+            $(".txt1").css({ background: "none" });
+          },
+        });
+        $(".btn2").hover(
+          function () {
+            $(".txt2").css({ "background-color": "aqua" });
+          },
+          function () {
+            $(".txt2").css({ "background-color": "white" });
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <p><button class="btn1">마우스오버/마우스아웃</button></p>
+    <p class="txt1">내용1</p>
+    <p><button class="btn2">호버</button></p>
+    <p class="txt2">내용2</p>
+  </body>
+</html>

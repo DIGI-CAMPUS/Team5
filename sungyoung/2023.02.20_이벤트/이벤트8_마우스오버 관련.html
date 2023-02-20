@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+    <script>
+      $(function(){
+        $("#btn1").data({"text":"javascript"}).on({ // 벗어나면 문자 없어짐
+          "mouseover":over, //올리면 over 함수 호출
+          "mouseout":out // 벗어나면 out 함수 호출
+        });
+        $("#btn2").data({"text":"welcome!"}).on({ // 계속 유지가 됨
+          "mouseover focus": over, // 올리면 over 함수 호출
+          "mosueover blur": out // 벗어나면 out 함수 호출
+        });
+        function over(){
+          $(".txt").text($(this).data("text")); // .txt에 data를 넣어달라
+        }
+        function out(){
+          $(".txt").text(""); // 벗어나면 아무것도 작성 x
+        }
+      });
+    </script>    
+    </style>
+  </head>
+<body>
+  <p><button id="btn1">버튼1</button></p>
+  <p><button id="btn2">버튼2</button></p>
+  <p class="txt"></p>
+</body>
+</html>
