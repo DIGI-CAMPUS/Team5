@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      //   $(function () {
+      //     $("#menu li:first").css({ "background-color": "#ff0" });
+      //     $("#menu li:last").css({ "background-color": "#0ff" });
+      //   });
+      //
+      //
+      //   $(function () {
+      //     $("#menu li:even").css({ "background-color": "#ff0" }); //홀수 인덱스
+      //     $("#menu li:odd").css({ "background-color": "#0ff" }); //짝수 인덱스
+      //   });
+      //
+      //
+      $(function () {
+        $("#menu li")
+          .eq(2) //인덱스2
+          .css({ "background-color": "#ff0" });
+        $("#menu li:lt(2)") //인덱스 2보다 큰 인덱스
+          .css({ "background-color": "#0ff" });
+        $("#menu li");
+        $("#menu li:gt(2)") //인덱스 2보다 큰 인덱스
+          .css({ "background-color": "#00f" });
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="menu">
+      <h2>dd</h2>
+      <h2>dd</h2>
+      <h2>dd</h2>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+  </body>
+</html>
