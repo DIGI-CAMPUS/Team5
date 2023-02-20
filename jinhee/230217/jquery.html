@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $("*").css("border", "1px solid gray"); // 전체 선택자
+      });
+      $(function () {
+        $("#kb")
+          .css("background-color", "lightyellow")
+          .css("border", "4px solid pink"); // 체이닝 기법: 선택한 요소에 메서드를 여녹해서 추가가능
+      });
+
+      $(function () {
+        $("#22").parent().css("border", "4px solid skyblue");
+      });
+
+      $(function () {
+        $("#33>h1").css("border", "4px solid yellow");
+        $("#33>section")
+          .children()
+          .css({ border: "4px solid skyblue", "background-color": "yellow" });
+      });
+
+      $(function () {
+        $("a")
+          .attr("href", "https://www.naver.com")
+          .attr("target", "_blank")
+          .css("font-size", "100px");
+      });
+    </script>
+  </head>
+  <body>
+    <h1>제이쿼리</h1>
+    <ul id="kb">
+      <li>1</li>
+      <ul>
+        <li id="22">22</li>
+      </ul>
+    </ul>
+
+    <div id="33">
+      <h1>ddd</h1>
+      <section>
+        <h1>ddd</h1>
+        <p>ppp</p>
+      </section>
+    </div>
+    <h2>선택자</h2>
+    <h3 id="kb">직접 선택자</h3>
+    <a>국민</a>
+    <p>
+      제이쿼리 앞에는 꼭 달러표시. *표시는 전체를 의미함. 아디는 # 클래스는 .
+      요소 선택자는 태그지정 동시선택 가능. $("#kb, h1") 또는 ("h1#kb")-> 이렇게
+      붙여서 사용하면 H1중에서 ID 같은 것만 지정
+    </p>
+  </body>
+</html>
