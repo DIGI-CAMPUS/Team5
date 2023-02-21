@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="stylesheet" href="../css/starfriend.css"><!-- css -->
+  <link rel="stylesheet" href="../css/slide.css" /><!-- 슬라이드 -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타프렌즈</title>
+  <script src="../js/jquery.js"></script>
+  <script>
+    //오른쪽 aside2 영역 - a 버튼에 마우스 오버하면 배경색 변경하기
+  $(function () {
+        $(".aside2_text a").on({
+          //on 메소드는 그룹으로 사용할 때~(단독x)
+          mouseover: function () {
+            $(".aside2_text a").css({ "background-color": "#f8da47" });
+          },
+          mouseout: function () {
+            $(".aside2_text a").css({  "background-color" : " #f5f5f3" });
+          },
+        });
+      });
+  </script>
+  <script>
+    //알림받기 -> 확인 시, 알럿호출 -> 네이버 로그인유도
+    $(function(){
+      $(".push_box button").on("click",
+      function(){
+          if(confirm("로그인이 필요한 서비스 입니다. 로그인을 도와드릴까요?")==true){
+          location.replace("https://nid.naver.com/nidlogin.login?svctype=64&url=https%3A%2F%2Fbrand.naver.com%2Fredirect%2Flogin?action%3DSTORE_ZZIM%26storeId%3D100497392")
+        }else{
+        return;
+        }
+      }); 
+    })
+  </script>
+</head>
+<body>
+  <section><!-- 헤더 : 정인보 -->
+    <header class="header">
+      <div class="container">
+        <h1><!--로고 가운데 정렬-->
+        <a href="starfriend.html">
+          <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQqZBhNsXIjphs4z2UFsiovRpsYq7HVYqv6Y4XHGocR3waEpR-d90JwMjiKPWi0o2_O5eOWGELqlY1bPoY198pFd2cM=w1920-h932" title="홈페이지 로고"/>
+          </a></h1>
+          <nav>
+            <ul id="topMenu">
+              <li class="active"><a href="starfriend.html">홈</a></li>
+              <li><a herf="#">프렌즈소개</a>
+              <ul>
+                <li><a href="소개.html">소개</a></li>
+                <li><a href="갤러리.html">갤러리</a></li>
+              </ul>
+                </li>
+              <li><a href="스타프렌즈몰.html"> 스타프렌즈몰</a></li>
+              <li><a href="매장안내.html"> 매장안내</a></li>
+              <li><a href="게시판.html">게시판</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+  </section>
+
+<main id="내용1">
+  <div class="push_box">
+  <button class="button" type="submit"><img src="스타프렌즈이미지/알림.png">알림받기</button>
+        <p>프렌즈 소식받고 다양한 할인쿠폰 받아보세요!</p></div>
+      <div class="search_box">
+      
+        <input type="search" placeholder="검색어를 입력하세요" maxlength="225">
+          <button class="button" type="submit">
+          <img src="스타프렌즈이미지/key.png"></button>
+      
+      </div>
+</main>
+<div class="container2">
+    <div class="aside1">
+      <div class="main_title">
+  <h1>KB금융그룹에 찾아온 "STAR FRIENDS"</h1>
+  <h3>고객 경험을 우선으로 생각하는 다섯명의 프렌즈 친구들이 일상 속에 즐거움을 가득 채워드릴게요!</h3>
+  <h3>금융상품부터 다채로운 굿즈 서비스까지-
+  캐릭터 그 이상의 경험을 지금 만나보세요.<br><br><hr><br>
+ </h3></div>
+ <div class="main1">
+<img src="스타프렌즈이미지/main2.png">
+<div class="main1_text">
+<h4>smart한 통합 결제 KB Pay 어플 리뉴얼! </h4>  <br>
+  <h5>스타프렌즈가 함께하는 자산관리와 뱅킹/카드결제 기능을 체험해 보세요.</h5>
+  <button class="main_button" type="submit">
+    <img src="스타프렌즈이미지/out.png"><!-- 버튼 -->
+  <a href="https://card.kbcard.com/SVC/DVIEW/HSCMCXPRISVC0129" target="_blank">체험하기</a></button>
+  <br>
+</div>
+ </div>
+
+ <div class="main2">
+  <div class="main2_text">
+  <h4>인스타그램 DM전용 이모티콘 개시 </h4>  <br>
+    <h5>가까운 사람들과 인스타그램 DM으로 소통할 때<br>
+      움직이는 스타프렌즈 이모티콘으로 감정을 전해 보세요.</h5>
+      <button class="main_button2" type="submit">
+        <img src="스타프렌즈이미지/out.png"><!-- 버튼 -->
+      <a href="https://www.instagram.com/" target="_blank">전하러가기</a>
+    <br></button></div>
+    <img src="스타프렌즈이미지/main1.png">
+
+   </div>
+
+   <div class="main3">
+    <img src="스타프렌즈이미지/main3.png">
+    <div class="main3_text">
+    <h4>스타프렌즈와 함께 나만의 부동산 관리 시작- </h4>    <br>
+      <h5>방구석에서 부동산 관련 알뜰 정보 알림받고</h5>
+      <h5>직관적인 KB시세 확인과 AI예측까지 한눈에 알아봐요.</h5>
+      <button class="main_button" type="submit">
+        <img src="스타프렌즈이미지/out.png"><!-- 버튼 -->
+      <a href="https://play.google.com/store/apps/details?id=com.kbstar.land&hl=ko&gl=US" target="_blank">만나러가기</a>
+    
+      <br></button>
+    </div>
+     </div>
+    </div>
+  
+ <div class="aside2">
+  <div class="aside2_text">
+  <h2>Coming Soon</h2><BR>
+    <h4>"전월실적 없어도 괜찮아요"</h4><br>
+    <a href="https://card.kbcard.com/" target="_blank">사전예약 하러가기</a>
+    
+    </div>
+  <div class="slide slide_wrap">
+    <div class="slide_item item1">
+      <img
+        src="스타프렌즈이미지/kiki.png"
+      />
+    </div>
+    <div class="slide_item item2">
+      <img
+        src="스타프렌즈이미지/bibi.png"
+      />
+    </div>
+    <div class="slide_item item3">
+      <img
+        src="스타프렌즈이미지/koly.png"
+      />
+    </div>
+    <div class="slide_item item4">
+      <img
+        src="스타프렌즈이미지/lamu.png"
+      />
+    </div>
+    <div class="slide_item item5">
+      <img
+        src="스타프렌즈이미지/ago.png"
+      />
+    </div>
+    <div class="slide_prev_button slide_button">◀</div>
+    <div class="slide_next_button slide_button">▶</div>
+    <ul class="slide_pagination"></ul>
+  </div>
+  <script src="slide.js"></script>
+ </div>
+
+</div>
+  
+<footer> <!-- 푸터 시작 -->
+  <hr><br>
+  <div id="bottomMenu">
+    <ul>
+      <font size="3px" color="gray">
+      <li><a href="https://omoney.kbstar.com/quics?page=oabout&QSL=F&_ga=2.174778978.1963062501.1675226008-190905228.1662195381#loading" target="_blank">회사소개</a></li>
+      <li><a href="https://omoney.kbstar.com/quics?page=C017615#loading" target="_blank">인재채용</a></li>
+      <li><a href="https://obank.kbstar.com/quics?page=C108662" target="_blank">개인정보처리방침</a></li>
+      <li><a href="https://obank.kbstar.com/quics?page=osupp#loading" target="_blank">고객센터</a></li>
+      <li><a href="https://www.instagram.com/kbkookminbank/?hl=ko"  target="_blank">
+      <img src="https://youth.gg.go.kr/_res/gg/test/img/new/instagram_logo.png" width="20" height="20"></a>&nbsp
+      <a href="https://www.youtube.com/user/openkbstar"  target="_blank">
+      <img src="https://youth.gg.go.kr/_res/gg/test/img/new/youtube_logo.png" width="20" height="20"></a>&nbsp
+      <a href="https://www.facebook.com/kbkookminbank"  target="_blank">
+      <img src="https://youth.gg.go.kr/_res/gg/test/img/new/facebook_logo.png" width="20" height="20"></a></li>    
+    </ul>
+  </div>
+  <br><br>
+    <ul id="address">
+      <font size="3px" color="black">
+      <li>[대표전화] 1588-9999 서울특별시 영등포구 의사당대로 141, KB국민은행 신관</li>
+    </ul></font>
+  </div>
+</footer>
+
+
+<script src="../js/slide.js"></script>
+
+</body>
+</html>

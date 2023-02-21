@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>큐1</title>
+    <script src="js/js/jquery.js"></script>
+  </head>
+  <script>
+    $(function () {
+      $(".txt1")
+        .animate({ marginLeft: "200px" }, 1000)
+        .animate({ marginTop: "200px" }, 1000)
+        .queue(function () {
+          // queue를 animate 중간에 넣어주게 되면 대기중인 함수를 반환하거나 새로운 함수 추가
+          $(this).css({ background: "red" });
+          $(this).dequeue(); // queue를 animate 중간에 넣어주게 되면 뒤에가 실행이 안되는데, 이걸 넣어줘야 이후도 진행됨
+        })
+        .animate({ marginLeft: 0 }, 1000)
+        .animate({ marginTop: 0 }, 1000);
+    });
+  </script>
+  <style>
+    * {
+      margin: 0;
+    }
+    .txt1 {
+      width: 50px;
+      text-align: center;
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <p class="txt1">"내용"</p>
+    <!--p 태그는 마진Left, 마진Top 적용 가능, -->
+    <!-- 인라인 태그인 span 태그는 margin-top, margin-bottom 속성이 적용되지 않습니다.-->
+    <!-- 블럭화 시켜야 가능-->
+  </body>
+</html>
