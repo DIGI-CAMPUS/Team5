@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $(".menuWrap_1 a").on("click", function (e) {
+          e.preventDefault();
+
+          $(".menuWrap_1 a").css({ "background-color": "white" });
+
+          $(this).css({ "background-color": "yellow" });
+        });
+      });
+
+      $(function () {
+        $(".menuWrap_2 a").on("click", function (e) {
+          e.preventDefault();
+
+          $(".menuWrap_2 a").css({ "background-color": "white" });
+
+          var idx = $(".menuWrap_2 a").index(this);
+          $(".menuWrap_2 a").eq(idx).css({ "background-color": "blue" });
+
+          $(".idxNum").text(idx); //텍스트값 표시
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>$this</h2>
+    <ul class="menuWrap_1">
+      <li><a href="#">돈까스</a></li>
+      <li><a href="#">떡볶이</a></li>
+      <li><a href="#">오뎅</a></li>
+    </ul>
+    <h2>index()</h2>
+    <ul class="menuWrap_2">
+      <li><a href="#">수제비</a></li>
+      <li><a href="#">국수</a></li>
+      <li><a href="#">볶음밥</a></li>
+    </ul>
+    <p class="idxNum"></p>
+  </body>
+</html>

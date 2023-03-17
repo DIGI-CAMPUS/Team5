@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lobster&display=swap");
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  font-family: "Do Hyeon", sans-serif;
+  text-decoration-line: none;
+  color: rgb(77, 76, 76);
+}
+
+.container {
+  background-color: rgb(226, 252, 247);
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  margin: 10px 10px;
+  border: solid 1px rgb(183, 184, 184);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.found_Id {
+  font-size: 30px;
+}
+
+.foundField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.join_email {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.idpwBox {
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 3px solid rgb(211, 211, 211);
+}
+
+.idpwBox::placeholder {
+  font-size: 20px;
+  text-align: left;
+}
+
+.foundButton {
+  width: 250px;
+  height: 50px;
+  border: none;
+  background-color: rgb(170, 245, 222);
+  border-radius: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.foundButton:hover {
+  background-color: rgb(93, 143, 250);
+  color: white;
+}

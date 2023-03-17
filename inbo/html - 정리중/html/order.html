@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <link rel="stylesheet" href="../css/starfriend.css"><!-- css -->
+  <link rel="stylesheet" href="../css/스타프렌즈몰.css"><!-- css -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스타프렌즈</title>
+</head>
+
+<body>
+  <section><!-- 헤더 : 정인보 -->
+    <header class="header">
+      <div class="container">
+        <h1><!--로고 가운데 정렬-->
+        <a href="starfriend.html">
+          <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQqZBhNsXIjphs4z2UFsiovRpsYq7HVYqv6Y4XHGocR3waEpR-d90JwMjiKPWi0o2_O5eOWGELqlY1bPoY198pFd2cM=w1920-h932" title="홈페이지 로고"/>
+          </a></h1>
+          <nav>
+            <ul id="topMenu">
+              <li class="active"><a href="starfriend.html">홈</a></li>
+              <li><a herf="#">프렌즈소개</a>
+              <ul>
+                <li><a href="소개.html">소개</a></li>
+                <li><a href="갤러리.html">갤러리</a></li>
+              </ul>
+                </li>
+              <li><a href="스타프렌즈몰.html"> 스타프렌즈몰</a></li>
+              <li><a href="매장안내.html"> 매장안내</a></li>
+              <li><a href="게시판.html">게시판</a></li>
+            </ul>
+          </nav>
+      </div>
+    </header>
+  </section>
+
+
+  <main>
+    <section>
+      <div>
+        <img src="스타프렌즈이미지/비회원.png" alt="" width="100%" ;>
+      </div>
+
+
+
+
+
+      </div>
+      <br>
+
+      <form>
+        <table class="product-table">
+          <tr>
+            <td>주문상품</td>
+            <td>
+              <div>
+
+                <ul id="shipping">
+                  <li>
+                    <lable id="field1" for="prod1"> </lable>
+
+                    <select id="prod1">
+                      <option value="키키인형" selected>[온라인 전용] 골프왕 키키</option>
+                      <option value="비비인형">[온라인 전용] 골프왕 비비</option>
+                      <option value="아거인형">[온라인 전용] 골프왕 아거</option>
+                      <option value="학용품">없는 것 빼곤 다있는 스타학용품세트</option>
+                      <option value="다이어리">생각이 쑥쑥 자라는 콜리 다이어리</option>
+                    </select>
+
+              </div>
+
+            </td>
+          </tr>
+        </table>
+        <br>
+        <br>
+
+        <table class="product-table">
+          <tr>
+            <td>주문자정보</td>
+          </tr>
+          <tr>
+            <td bgcolor="#DCDCDC">보내는 분<span style="color:red;">*</span> </td>
+            <td><label for="user-name"></label>
+              <input type="text" id="user-name" autofocus required>
+            </td>
+          </tr>
+          <td bgcolor="#DCDCDC">휴대폰<span style="color:red;">*</span></td>
+          <td> <label for="phone"></label>
+            <input type="tel" id="phone" placeholder="하이픈 빼고 입력해주세요" required>
+          </td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#DCDCDC">비밀번호<span style="color:red;">*</span></td>
+            <td>
+              <label for="pw1"></label>
+              <input type="password" id="pw1" placeholder="문자 숫자 포함, 6자리 이상" required>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#DCDCDC">비밀번호 확인<span style="color:red;">*</span></td>
+            <td>
+              <label for="pw2"></label>
+              <input type="password" id="pw2" required>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#DCDCDC">이메일</td>
+            <td>
+              <lable for="mail"></lable>
+              <input type="email" id="mail">
+            </td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <table class="product-table">
+          <tr>
+            <td>배송지 정보</td>
+          </tr>
+          <tr>
+            <td bgcolor="#DCDCDC">받는 분<span style="color:red;">*</span></td>
+            <td><label for="user-name"></label>
+              <input type="text" id="user-name" autofocus required>
+            </td>
+          </tr>
+          <td bgcolor="#DCDCDC">휴대폰<span style="color:red;">*</span></td>
+          <td><input type="tel" id="phone" placeholder="하이픈 빼고 입력해주세요" required>
+            </tr>
+            <tr>
+              <td bgcolor="#DCDCDC">주소<span style="color:red;">*</span></td>
+              <td>
+                <lable for="addr"></lable>
+                <input type="text" id="addr" required>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#DCDCDC">배송메모</td>
+              <td>
+                <lable for="memo"></lable>
+                <textarea id=memo cols=20 row="4" placeholder="배송 주의사항을 적어주세요."></textarea>
+              </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table class="product-table">
+          <tr>
+            <td>결제방법</td>
+          </tr>
+          <tr>
+            <td bgcolor="#DCDCDC">주문방식</td>
+            <td>
+              <label><input type="radio" name="order" value="cash">무통장입금</label>
+              <label><input type="radio" name="order" value="card">신용카드</label>
+            </td>
+          </tr>
+         
+        </table>
+          <br>
+          <br>
+
+
+          <div class="button-group">
+            <input style="width: 60pt; height: 40pt; margin-right: 30px;" type="button" value="뒤로가기"
+              onClick="location.href='스타프렌즈몰.html'">
+            <input style="width: 60pt; height: 40pt;" type="submit" value="주문하기">
+
+          </div>
+      </form>
+      <br>
+    </section>
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------- -->
+
+
+  </main>
+  <section><!-- 풋터 : 조현손-->
+    <div id="wrap">
+      <footer>
+        <hr><br>
+        <div id="bottomMenu">
+          <ul>
+            <font size="3px" color="gray">
+              <li><a
+                  href="https://omoney.kbstar.com/quics?page=oabout&QSL=F&_ga=2.174778978.1963062501.1675226008-190905228.1662195381#loading"
+                  target="_blank">회사소개</a></li>
+              <li><a href="https://omoney.kbstar.com/quics?page=C017615#loading" target="_blank">인재채용</a></li>
+              <li><a href="https://obank.kbstar.com/quics?page=C108662" target="_blank">개인정보처리방침</a></li>
+              <li><a href="https://obank.kbstar.com/quics?page=osupp#loading" target="_blank">고객센터</a></li>
+              <li><a href="https://www.instagram.com/kbkookminbank/?hl=ko" target="_blank">
+                  <img src="https://youth.gg.go.kr/_res/gg/test/img/new/instagram_logo.png" width="20" height="20"></a>
+              </li>
+              <li><a href="https://www.youtube.com/user/openkbstar" target="_blank">
+                  <img src="https://youth.gg.go.kr/_res/gg/test/img/new/youtube_logo.png" width="20" height="20"></a>
+              </li>
+              <li><a href="https://www.facebook.com/kbkookminbank" target="_blank">
+                  <img src="https://youth.gg.go.kr/_res/gg/test/img/new/facebook_logo.png" width="20" height="20"></a>
+              </li>
+            </font>
+          </ul>
+        </div>
+        <br><br>
+        <ul id="address">
+          <font size="3px" color="black">
+            <li>[대표전화] 1588-9999 서울특별시 영등포구 의사당대로 141, KB국민은행 신관</li>
+          </font>
+        </ul>
+
+
+      </footer>
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>

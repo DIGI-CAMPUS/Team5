@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>text 1</p>
+    <a href="https://www.naver.com">naver</a>
+    <a href="https://www.daum.com">daum</a>
+    <script>
+      //요소 노드 생성
+      //   const CE1 = document.querySelector("p");
+      //   //노드 삭제
+      //   CE1.parentNode.removeChild(CE1);
+      //---------------------------------------------------------------
+      //   const CE2 = document.querySelector("a");
+      //   CE2.parentNode.removeChild(CE2);
+      //
+      //queryselector는 최상위 1개만 지정됨.
+      //모든 a 하려면 all 해야함
+      //
+      const CE2 = document.querySelectorAll("a");
+      for (let index = 0; index < CE2.length; index++) {
+        CE2[index].parentNode.removeChild(CE2[index]);
+      }
+      //   CE2[0].parentNode.removeChild(CE2[0]);
+      //   CE2[1].parentNode.removeChild(CE2[1]);
+
+      //--------------------------------------------------------------
+      //   const childNodes = document.body.childNodes;
+      //   childNodes.forEach((node) => {
+      //     if (node.nodeName === "A") node.parentNode.removeChild(node);
+      //   });
+
+      //주의할 점 (node.nodeName === "A") 여기서 a태그를 대문자로 써주어야함... 이게 헷갈림..!!
+    </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="phone">
+        <div style="position: relative">
+          <img src="image/home-phones.png" />
+          <!-- 무한슬라이스구현 -->
+          <div class="slideshow-container">
+            <div class="slide_item fade">
+              <img src="image/screenshot1.png" />
+            </div>
+            <div class="slide_item fade">
+              <img src="image/screenshot2.png" />
+            </div>
+            <div class="slide_item fade">
+              <img src="image/screenshot3.png" />
+            </div>
+            <div class="slide_item fade">
+              <img src="image/screenshot4.png" />
+            </div>
+          </div>
+          <!-- 무한슬라이스구현 -->
+        </div>
+      </div>
+
+      <div class="loginbox">
+        <div class="login">
+          <img style="margin: 35px; width: 174px" src="image/insta.jpg" />
+          <form action="instagram.html">
+            <fieldset>
+              <input
+                type="text"
+                id="user-id"
+                placeholder="전화번호, 사용자 이름 또는 이메일"
+                required
+                autofocus
+              />
+              <br />
+
+              <input
+                type="password"
+                id="user-password"
+                placeholder="비밀번호"
+                required
+              />
+              <br />
+              <input id="login-summit" type="submit" value="로그인" />
+            </fieldset>
+          </form>
+          <div class="or">
+            <img src="image/line.PNG" width="100px" height="20px" />
+            <p
+              style="
+                margin: 0 20px 20px 20px;
+                color: gray;
+                font-size: small;
+                font-weight: bold;
+              "
+            >
+              또는
+            </p>
+            <img src="image/line.PNG" width="100px" height="20px" />
+          </div>
+          <a
+            href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522383xnp7c99571ej5eqx1jb1rp1307bl9hwqe6jeaiir1s0tnrk%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dko_KR%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D8da2be1b-8c06-450a-9f1d-ed38c7e39e74%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522383xnp7c99571ej5eqx1jb1rp1307bl9hwqe6jeaiir1s0tnrk%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0"
+          >
+            <img
+              style="width: 16px"
+              src="https://cdn-icons-png.flaticon.com/512/174/174848.png"
+            />
+            <span style="color: #4f67b0; font-size: 14px; font-weight: bold"
+              >Facebook으로 로그인</span
+            ></a
+          >
+          <a href="https://www.instagram.com/accounts/password/reset/>"
+            ><p style="color: #4f67b0; font-size: 12px">
+              비밀번호를 잊으셨나요?
+            </p>
+          </a>
+        </div>
+        <div class="join">
+          <p>
+            계정이 없으신가요?
+            <a href="https://www.instagram.com/accounts/emailsignup/"
+              ><span style="color: #00bfff; font-weight: bold">가입하기</span>
+            </a>
+          </p>
+        </div>
+        <div class="download">
+          <p>앱을 다운로드하세요.</p>
+          <a
+            aria-label="Google Play에서 다운로드"
+            href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DAC738836-A9FB-4F72-9456-9962E2FF99ED%26utm_content%3Dlo%26utm_medium%3Dbadge"
+            target="_blank"
+            ><img
+              alt="Google Play에서 다운로드"
+              class="appstore"
+              src="https://static.cdninstagram.com/rsrc.php/v3/ye/r/UtJtFmFLCiD.png"
+            />
+          </a>
+
+          <a
+            aria-label="Microsoft에서 다운로드"
+            href="ms-windows-store://pdp/?productid=9nblggh5l9xt&amp;referrer=appbadge&amp;source=www.instagram.com&amp;mode=mini&amp;pos=0%2C0%2C1920%2C1030"
+            ><img
+              alt="Microsoft에서 다운로드"
+              class="appstore"
+              src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/LBxTdceDfgS.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>Meta</span>
+      <span>소개</span>
+      <span>블로그</span>
+      <span>채용 정보</span>
+      <span>도움말</span>
+      <span>API</span>
+      <span>개인정보처리방침</span>
+      <span>약관</span>
+      <span>인기 계정</span>
+      <span>위치</span>
+      <span>Instagram Lite</span>
+      <span>연락처 업로드 & 비사용자</span>
+    </div>
+    <div class="bottom">
+      <span>한국어</span>
+      <span>© 2023 Instagram from Meta</span>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

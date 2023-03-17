@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <lable><input type="radio" name="color" value="blue" /> 파랑 </lable>
+    <lable><input type="radio" name="color" value="red" /> 빨강 </lable>
+    <lable><input type="radio" name="color" value="green" /> 초록 </lable>
+    <lable><input type="radio" name="color" value="purple" /> 보라 </lable>
+    <script>
+      const radioEls = document.querySelectorAll("[type = 'radio']");
+      for (let i = 0; i < radioEls.length; i++) {
+        if (radioEls[i].value === "green") {
+          radioEls[i].checked = true;
+        }
+      }
+    </script>
+  </body>
+</html>
